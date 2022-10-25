@@ -1,0 +1,21 @@
+{
+  "name": "yaaqiu/php-alibabasdk",
+  "description": "1688开放平台 接口sdk",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "alibabasdk\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "YanqiuXu",
+      "email": "3218177964@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0",
+    "ext-json": "*"
+  }
+}
