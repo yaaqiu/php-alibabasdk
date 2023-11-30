@@ -52,14 +52,14 @@ class AlibabaOauth
      * @param $code
      * @return bool|string
      */
-    public function accessToken($appKey, $appSecret, $redirect_uri, $code)
+    public function accessToken($appKey, $appSecret, $redirectUri, $code)
     {
         $params = [
             'grant_type'         => 'authorization_code',
             'need_refresh_token' => true,
             'client_id'          => $appKey,
             'client_secret'      => $appSecret,
-            'redirect_uri'       => $redirect_uri,
+            'redirect_uri'       => $redirectUri,
             'code'               => $code
         ];
         return Request::post(sprintf($this->tokenUrl, $appKey), $params);
